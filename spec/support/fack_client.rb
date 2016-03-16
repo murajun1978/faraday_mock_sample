@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class FackClient < Sinatra::Base
+class FackApp < Sinatra::Base
   get '/users' do
     json_response 200, 'users.json'
   end

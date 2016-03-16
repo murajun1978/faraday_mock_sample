@@ -57,6 +57,6 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.before do
-    stub_request(:any, /api.example.com/).to_rack(FackClient)
+    stub_request(:any, /api.example.com/).to_rack(FackApp)
   end
 end
